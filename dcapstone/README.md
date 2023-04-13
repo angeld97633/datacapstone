@@ -1,10 +1,10 @@
 DATA4950 Capstone
 ==============================
 
-A short description of the project.
+This project looks at the data collected from 
 
 Project Organization
-------------
+----------------------
 
     ├── LICENSE
     ├── Makefile           <- Makefile with commands like `make data` or `make train`
@@ -50,8 +50,15 @@ Project Organization
     │       └── visualize.py
     │
     └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
+    
+
+Business Question
+---------------------
+The goal of this project is to analyze the relationship between online sales and age, to see which age groups shop online the most.
+The result of this analysis can tell businesses how to market to the crowd that contributes more to sales. The younger crowd would 
+probably need their advertisements on social media, such as tiktok or instagream, whereas an older crowd would need it on cable 
+television commercials.
 
 
---------
 
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>

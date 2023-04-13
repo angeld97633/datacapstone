@@ -1,0 +1,4 @@
+Data found on www.kaggle.com
+Data provided by Joseph Nowicki
+
+https://www.kaggle.com/datasets/thedevastator/demographical-shopping-purchases-data?resource=download
