@@ -8,3 +8,12 @@ setup(
     author='Angel Durrani',
     license='MIT',
 )
+
+sudo apt install python3-pip
+pip install -U scikit-learn
+conda install pandas
+pip install numpy 
+pip install statsmodels
+pip install seaborn
+pip install scipy patsy
+pip install matplotlib

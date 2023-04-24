@@ -4,6 +4,8 @@ import logging
 from pathlib import Path
 from dotenv import find_dotenv, load_dotenv
 
+data = pd.read_csv("online_store_customer_data.csv")
+cd /Users/angeldurrani/Documents/GitHub/datacapstone/dcapstone/data/raw
 
 @click.command()
 @click.argument('input_filepath', type=click.Path(exists=True))
@@ -12,6 +14,14 @@ def main(input_filepath, output_filepath):
     """ Runs data processing scripts to turn raw data from (../raw) into
         cleaned data ready to be analyzed (saved in ../processed).
     """
+    data = data.dropna()
+    gen_dumm = pd.get_dummies(data['Gender'])
+    gen_dumm["Female"] 
+    data = pd.concat([data,gen_dumm["Female"]],axis=1)
+    data = data.drop(["Gender"],axis=1)
+    data.rename(columns = {'Female':'Gender F=1,M=0'}, inplace = True)
+    dataNull = data.isnull()
+    dataNull.sum()
     logger = logging.getLogger(__name__)
     logger.info('making final data set from raw data')
 
