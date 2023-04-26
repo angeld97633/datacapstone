@@ -15,29 +15,29 @@ R-squared is a measure of how much variation can be explained by the model. If t
 
 
 ### Age 
-   Linear Regression
+   #### Linear Regression
       R-squared: -0.01 
       MAE: 0.85 
       MSE: 0.97 
-   Random Forest
+  #### Random Forest
       R-squared: -0.08 
       MAE: 0.87 
       MSE: 1.04 
-   Random Forest after Hyperparameter Tuning
+  #### Random Forest after Hyperparameter Tuning
       R-squared: -0.06 
       MAE: 0.86 
       MSE: 1.03 
       
 ### Gender 
-   Linear Regression
+   #### Linear Regression
       R-squared:  -0.01 
       MAE:  0.85 
       MSE:  0.97 
-   Random Forest
+   #### Random Forest
       R-squared: -0.0 
       MAE: 0.84 
       MSE: 0.97 
-   Random Forest after Hyperparameter Tuning
+   #### Random Forest after Hyperparameter Tuning
       R-squared: -0.0 
       MAE: 0.84 
       MSE: 0.97 
