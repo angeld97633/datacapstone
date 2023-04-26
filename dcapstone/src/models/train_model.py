@@ -29,7 +29,18 @@ Random Forest Regressor
     regr = RandomForestRegressor(n_estimators = 10, random_state = 101)
     regr.fit(x2_train, y2_train.ravel())    
     
+Random Forest Regressor -- After hyperparameter tuning
+    params1 = {'n_estimators': 200,
+    'min_samples_split': 5,
+    'min_samples_leaf': 2,
+    'max_features': 'sqrt',
+    'max_depth': 10,
+    'bootstrap': True}
     
+    regr2 = RandomForestRegressor(**params1)
+    regr2.fit(x2_train, y2_train.ravel())
+
+
 Gradient Boosting Regressor
     x4 = data["Age"]
     y4 = data["Amount_spent"]
@@ -79,7 +90,17 @@ Random Forest Regressor
     x3_train, x3_test, y3_train, y3_test = train_test_split(x3, y3, test_size = 0.25, random_state = 101)
 
     regr1 = RandomForestRegressor(n_estimators = 10, random_state = 101)
-regr1.fit(x3_train, y3_train.ravel())    
+regr1.fit(x3_train, y3_train.ravel())   
+
+Random Forest Regressor -- After hyperparameter tuning
+    params2 = {'n_estimators': 200,
+     'min_samples_split': 10,
+     'min_samples_leaf': 2,
+     'max_features': 'sqrt',
+     'max_depth': 50,
+     'bootstrap': True}
+    regr3 = RandomForestRegressor(**params2)
+    regr3.fit(x3_train, y3_train.ravel())
 
 
 Gradient Boosting Regressor
