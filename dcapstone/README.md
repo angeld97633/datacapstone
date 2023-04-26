@@ -14,7 +14,7 @@ A linear regression model and a random forest model were run for age versus amou
 R-squared is a measure of how much variation can be explained by the model. If the value of the R-squared is 1, that means every bit of the variation is explained by the model, so the closer to 1 that this value is the better. Both MAE and MSE are statistics that calculate error, so this would mean the closer to 0 the better, with 0 meaning no error at all. 
 
 
-# Age 
+### Age 
    Linear Regression
       R-squared: -0.01 
       MAE: 0.85 
@@ -28,7 +28,7 @@ R-squared is a measure of how much variation can be explained by the model. If t
       MAE: 0.86 
       MSE: 1.03 
       
-# Gender 
+### Gender 
    Linear Regression
       R-squared:  -0.01 
       MAE:  0.85 
