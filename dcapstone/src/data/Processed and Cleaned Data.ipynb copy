@@ -1,0 +1,131 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "bc268c47",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import pandas as pd\n",
+    "import numpy as np"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "f855f4cc",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "cd /Users/angeldurrani/Documents/GitHub/datacapstone/dcapstone/data/raw"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "55febbac",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "data = pd.read_csv(\"online_store_customer_data.csv\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "5ff1ac15",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "data = data.dropna()\n",
+    "gen_dumm = pd.get_dummies(data['Gender'])\n",
+    "gen_dumm[\"Female\"] \n",
+    "data = pd.concat([data,gen_dumm[\"Female\"]],axis=1)\n",
+    "data = data.drop([\"Gender\"],axis=1)\n",
+    "data.rename(columns = {'Female':'Gender F=1,M=0'}, inplace = True)\n",
+    "dataNull = data.isnull()\n",
+    "dataNull.sum()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "8cb1e57a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "data"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "cd35dcb6",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "f0169eca",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "e7fc8140",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "05c8102f",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "8c21e5c5",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "e7f0f1cb",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.9.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
